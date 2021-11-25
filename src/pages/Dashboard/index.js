@@ -723,7 +723,7 @@ const Dashboard = props => {
                 </CardBody>
               </Card>
             </Col>
-            {/* <Col xl={4}>
+            {/* <Col xl={6}>
               <Card>
                 <CardBody>
                   <h4 className="card-title mb-4">Chat</h4>

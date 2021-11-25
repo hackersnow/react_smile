@@ -103,11 +103,290 @@ const SidebarContent = props => {
 
             <li>
               <Link to="/dispacher_oder" className="waves-effect">
-                <i className="fas fa-th-large"></i>
+                <i className="fas fa-truck"></i>
                 <span>Dispacher</span>
               </Link>
             </li>
+
+            <li>
+              <Link to="/Messege" className="waves-effect">
+                <i className="fas fa-comment-alt"></i>
+                <span>Messenger</span>
+              </Link>
+            </li>
            
+
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="ti-package"></i>
+                <span>Subscription Package</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+                <li>
+                  <Link to="/SubscriptionList">Subscription List</Link>
+                </li>
+                <li>
+                  <Link to="/AddSubscripton">Add Subscription</Link>
+                </li>
+               
+              </ul>
+            </li>
+        
+            {/* Restaurant */}
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="fas fa-store"></i>
+                <span>Restaurant</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+               
+                <li>
+                  <Link to="/RestaurantList">Restaurant List</Link>
+                </li>
+                <li>
+                  <Link to="/RestaurantAddition">Restaurant Addition</Link>
+                </li>
+               
+              </ul>
+            </li>
+
+
+
+             {/* CuisineManager */}
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="fas fa-globe"></i>
+                <span>Cuisine Manager</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+               
+                <li>
+                  <Link to="/CuisineList">Cuisine List</Link>
+                </li>
+                <li>
+                  <Link to="/CuisineAddition">Cuisine Addition</Link>
+                </li>
+               
+              </ul>
+            </li> 
+
+
+            
+
+              {/* CategoryManager */}
+              <li>
+              <Link to="/#" className="has-arrow waves-effect">
+              <i className="ti-view-grid"></i>
+                <span>Category Manager</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+               
+                <li>
+                  <Link to="/CategoryList">Category List</Link>
+                </li>
+                <li>
+                  <Link to="/CategoryAddition">Category Addition</Link>
+                </li>
+               
+              </ul>
+            </li> 
+
+
+              {/* Item Manager */}
+              <li>
+              <Link to="/#" className="has-arrow waves-effect">
+            
+              <i className="ti-archive"></i>
+                <span>Item Manager</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+               
+                <li>
+                  <Link to="/ItemList">Item List</Link>
+                </li>
+                <li>
+                  <Link to="/ItemAddition">Item Addition</Link>
+                </li>
+               
+              </ul>
+            </li> 
+ 
+
+  {/* DeliveryManager */}
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="fas fa-people-carry"></i>
+                <span>Delivery Manager</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+               
+                <li>
+                  <Link to="/DeliverPersonList">Deliver Person List</Link>
+                </li>
+                <li>
+                  <Link to="/AddDeliveryPerson">Add Delivery Person</Link>
+                </li>
+                <li>
+                  <Link to="/DiliveryHistory">Dilivery History</Link>
+                </li>
+               
+              </ul>
+            </li> 
+
+
+             {/* DisputeManager_fx */}
+             <li>
+              <Link to="/DisputeManager">
+                <i className="fas fa-user-shield"></i>
+                <span>Dispute Manager</span>
+              </Link>
+            
+            </li> 
+ 
+           
+
+
+
+            {/* Banners */}
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="fas fa-sitemap"></i>
+                <span>Banners</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+               
+                <li>
+                  <Link to="/AppBannersList">App Banners List</Link>
+                </li>
+                <li>
+                  <Link to="/CreateBanners">Create Banners</Link>
+                </li>
+               
+              </ul>
+            </li> 
+ 
+
+            {/* Promotions */}
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="fas fa-bullhorn"></i>
+                <span>Promotions</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+               
+                <li>
+                  <Link to="/SendNotification">Send Notification</Link>
+                </li>
+                <li>
+                  <Link to="/NotificationHistory">Notification History</Link>
+                </li>
+               
+              </ul>
+            </li> 
+           
+
+
+           
+            {/* Offers */}
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="fas fa-gift"></i>
+                <span>Offers</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+               
+                <li>
+                  <Link to="/OfferList">Offer List</Link>
+                </li>
+                <li>
+                  <Link to="/CreateOffers">Create Offers</Link>
+                </li>
+               
+              </ul>
+            </li> 
+           
+
+            {/* EmployeesManagement */}
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="dripicons-user"></i>
+                <span>Employes Manag..</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+               
+                <li>
+                  <Link to="/AddEmployees"> Add Employees</Link>
+                </li>
+               
+               
+              </ul>
+            </li> 
+
+
+             {/* HealthyKitchen */}
+             <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="ion ion-md-restaurant"></i>
+                <span>Healthy Kitchen</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+               
+                <li>
+                  <Link to="/HealthItemsList"> Items List</Link>
+                </li>
+                <li>
+                  <Link to="/MealPackages"> Meal Packages</Link>
+                </li>
+                <li>
+                  <Link to="/DietPlans"> Diet Plans</Link>
+                </li>
+               
+               
+              </ul>
+            </li> 
+           
+
+
+           
+            {/* Users */}
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="fas fa-users"></i>
+                <span>Users</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+              <li>
+                  <Link to="/UserProfileList">User Profile List</Link>
+                </li>
+                <li>
+                  <Link to="/AddUserProfile">Add User Profile</Link>
+                </li>
+               
+               
+              </ul>
+            </li> 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+           
+
+            <li className="menu-title">{props.t("Components")}</li>
+
             <li>
               <Link to="/calendar" className=" waves-effect">
                 <i className="ti-calendar"></i>
@@ -132,8 +411,6 @@ const SidebarContent = props => {
                 </li>
               </ul>
             </li>
-
-            <li className="menu-title">{props.t("Components")}</li>
 
             <li>
               <Link to="/#" className="has-arrow waves-effect">

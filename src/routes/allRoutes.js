@@ -9,10 +9,90 @@ import UserProfile from "../pages/Authentication/user-profile";
 
 import Dispacher_oder from "../pages/Dispacher/Dispacher_oder";
 
+// Messenger
+import Messege from "../pages/Messenger/Messege";
+
+// Subscription
+import Add_Subscripton from "../pages/SubscriptionPackages/Add_Subscripton";
+import Subscription_List from "../pages/SubscriptionPackages/Subscription_List";
+
+
+// Restaurant
+import RestaurantAddition from "../pages/Restaurant/RestaurantAddition";
+import RestaurantList from "../pages/Restaurant/RestaurantList";
+
+// CuisineManager
+import CuisineAddition from "../pages/CuisineManager/CuisineAddition";
+import CuisineList from "../pages/CuisineManager/CuisineList";
+
+//CategoryAddition
+import CategoryAddition from "../pages/CategoryManager/CategoryAddition";
+import CategoryList from "../pages/CategoryManager/CategoryList";
+
+
+
+//ItemManager
+import ItemAddition from "../pages/ItemManager/ItemAddition";
+import ItemList from "../pages/ItemManager/ItemList";
+
+
+
+//DeliveryManager
+
+import AddDeliveryPerson from "../pages/DeliveryManager/AddDeliveryPerson";
+import DeliverPersonList from "../pages/DeliveryManager/DeliverPersonList";
+import DiliveryHistory from "../pages/DeliveryManager/DiliveryHistory";
+
+
+//Banners
+
+import AppBannersList from "../pages/Banners/AppBannersList";
+import CreateBanners from "../pages/Banners/CreateBanners";
+
+
+// Promotions
+import NotificationHistory from "../pages/Promotions/NotificationHistory";
+import SendNotification from "../pages/Promotions/SendNotification";
+
+// Offers
+import OfferList from "../pages/Offers/OfferList";
+import CreateOffers from "../pages/Offers/CreateOffers";
+
+
+// EmployeesManagement
+import AddEmployees from "../pages/EmployeesManagement/AddEmployees";
+
+
+// Users
+import AddUserProfile from "../pages/Users/AddUserProfile";
+import UserProfileList from "../pages/Users/UserProfileList";
+
+
+
+
+// HealthyKitchen
+import AddDietPlans from "../pages/HealthyKitchen/AddDietPlans";
+import DietPlans from "../pages/HealthyKitchen/DietPlans";
+
+import HealthItemsAdd from "../pages/HealthyKitchen/HealthItemsAdd";
+import HealthItemsList from "../pages/HealthyKitchen/HealthItemsList";
+
+
+import MealPackages from "../pages/HealthyKitchen/MealPackages";
+import AddMealPackages from "../pages/HealthyKitchen/AddMealPackages";
+
+
+// DisputeManager_fx
+import DisputeManager from "../pages/DisputeManager_fx/DisputeManager";
+
+
+
+
+
 // Pages Calendar
 import Calendar from "../pages/Calendar/index";
 
-//Email
+//Emails
 import EmailInbox from "../pages/Email/email-inbox";
 import EmailRead from "../pages/Email/email-read";
 import EmailCompose from "../pages/Email/email-compose";
@@ -120,8 +200,104 @@ import PagesDirectory from "../pages/Utility/PagesDirectory";
 const userRoutes = [
   { path: "/dashboard", component: Dashboard },
 
+   // Dispacher
   { path: "/dispacher_oder", component: Dispacher_oder },
 
+  // Messegener
+  { path: "/Messege", component: Messege },
+
+  // Subscription
+
+  { path: "/AddSubscripton", component: Add_Subscripton },
+  { path: "/SubscriptionList", component: Subscription_List },
+
+   // Restaurant
+
+   { path: "/RestaurantAddition", component: RestaurantAddition },
+   { path: "/RestaurantList", component: RestaurantList },
+ 
+
+
+   // CuisineManager
+
+   { path: "/CuisineAddition", component: CuisineAddition },
+   { path: "/CuisineList", component: CuisineList },
+
+   //    Category Manager
+
+   { path: "/CategoryAddition", component: CategoryAddition },
+   { path: "/CategoryList", component: CategoryList },
+
+
+    //    Item Manager
+
+    { path: "/ItemAddition", component: ItemAddition },
+    { path: "/ItemList", component: ItemList },
+
+
+
+     //    Delivery Manager
+
+     { path: "/AddDeliveryPerson", component: AddDeliveryPerson },
+     { path: "/DeliverPersonList", component: DeliverPersonList },
+     { path: "/DiliveryHistory", component: DiliveryHistory },
+
+
+
+     //    Banners
+
+     { path: "/AppBannersList", component: AppBannersList },
+     { path: "/CreateBanners", component: CreateBanners },
+    
+
+     // Promotions
+
+     { path: "/NotificationHistory", component: NotificationHistory },
+     { path: "/SendNotification", component: SendNotification },
+    
+
+      // Offer
+
+      { path: "/OfferList", component: OfferList },
+      { path: "/CreateOffers", component: CreateOffers },
+
+
+       // EmployeesManagement
+
+     { path: "/AddEmployees", component: AddEmployees },
+     
+
+      // Users
+
+      { path: "/AddUserProfile", component: AddUserProfile },
+      { path: "/UserProfileList", component: UserProfileList },
+
+
+
+      // HealthyKitchen
+
+      { path: "/AddDietPlans", component: AddDietPlans },
+      { path: "/DietPlans", component: DietPlans },
+
+      { path: "/HealthItemsAdd", component: HealthItemsAdd },
+      { path: "/HealthItemsList", component: HealthItemsList },
+
+      { path: "/MealPackages", component: MealPackages },
+      { path: "/AddMealPackages", component: AddMealPackages },
+     
+     
+
+     
+      // DisputeManager_fx
+
+      { path: "/DisputeManager", component: DisputeManager },
+    
+     
+     
+
+ 
+
+ 
   // //calendar
   { path: "/calendar", component: Calendar },
 

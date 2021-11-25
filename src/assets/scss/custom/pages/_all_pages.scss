@@ -1,0 +1,379 @@
+
+
+.sub_btn_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 20px;
+}
+
+.btn_self{
+    font-size: 14px;
+    border: none !important;
+    background: transparent !important;
+    color: rgb(94, 94, 94) !important;
+}
+
+.responsiveTable tbody tr{
+    background: transparent !important;
+    border: none !important;
+  
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+    --bs-table-accent-bg: none !important; 
+    color:none !important;
+}
+
+.boxv_add_input {
+    display: flex;
+    justify-content: space-between !important;
+    width: 100%;
+  
+} 
+.vc_input{
+    width: 48% !important;
+}
+
+.input_box_sub{
+    margin-top: 15px;
+}
+.input_box_sub button{
+    padding: 6px 45px;
+}
+.input_box_sub input::placeholder, .restaurant_form input::placeholder{
+    font-size: 12px !important;
+    color: rgb(184, 184, 184);
+}
+.input_box_sub label, .restaurant_form label{ 
+    font-size: 14px;
+    font-weight: 300;
+    color:rgb(112, 111, 111);
+    margin-bottom: 5px !important;
+   
+}
+.input_box_sub textarea::placeholder, .restaurant_form textarea::placeholder{
+    font-size: 12px !important;
+    color: rgb(184, 184, 184);
+}
+
+.restaurant_form{
+    margin-bottom: 15px;
+}
+
+
+.dropzone_cutome {
+    min-height: 100px !important; 
+   
+    width: 300px !important;
+}
+
+.dropzone_cutome h4{
+    font-size: 16px !important;
+}
+
+
+
+
+.input_box_sub input, .restaurant_form input{
+    font-size: 12px !important;
+    color: rgb(184, 184, 184);
+    height: 40px;
+}
+.input_box_sub .select2-selection23{
+    height: 20px;
+}
+
+
+.urant_form_x{
+    width: 35%;
+    margin-right: 20px;
+}
+.urant_form_x input{
+   width: 100%;
+}
+
+.urant_form_x span{
+    font-size: 14px !important;
+  color: rgb(175, 175, 175);
+}
+
+.input_box_subxp input{
+    height: 25px !important;
+}
+
+.map_box_res{
+    width: 100%;
+    height: 300px;
+    margin: 30px 0px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.box_ve_che input{
+    width: 22px;
+    height: 22px;
+}
+
+.box_ve_che{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+
+.vd_chek{
+    flex-direction: row;
+}
+.vd_chek span{
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font-size: 13px;
+    color: rgb(122, 122, 122);
+}
+.input_resaurant_box22{
+    display: flex;
+    
+    align-items: center;
+}
+
+.box_ve_che span{
+ 
+    margin-bottom: 0px;
+    font-size: 13px;
+    color: rgb(128, 128, 128) !important;
+}
+
+.vd_box_inP input{
+    width: 20px;
+    height: 20px;
+    color: #444;
+    
+}
+
+.vd_box_inP span{
+    color: rgb(117, 117, 117);
+    display: inline-block;
+    padding-top: 4px;
+    margin-right: 10px;
+}
+
+.input_resaurant_box_item{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.input_resaurant_box_item input:first-child{
+    width: 55%;
+}
+
+.input_resaurant_box_item input:last-child{
+    width: 40%;
+}
+.input_box_item_adit{
+    display: flex;
+    margin-bottom: 15px;
+}
+.input_box_item_adit input{
+    width: 35%;
+    margin-right: 20px;
+    
+}
+
+.che_boxd{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.che_boxd .vd_box_inP{
+    width: 130px;
+}
+
+.che_boxd .vte_v{
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid rgb(238, 238, 238);
+  color: rgb(199, 199, 199);
+}
+
+.dz-message22{
+    margin: 0px 0px !important;
+}
+
+.dve_auto{
+    margin-left: auto !important;
+}
+
+.restaurant_form4dd input
+{
+    border: 1px solid rgb(218, 218, 218) !important;
+    border-radius: 4px;
+    padding: 0px 15px;
+    width: 150px;
+    display: inline-block;
+    float: right;
+}
+
+.restaurant_form4dd label{
+    float: right;
+    width: auto !important;
+}
+
+.top_id h4{
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.imag_u_pro{
+    width: 60px;
+    height: 50px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.imag_u_pro img{
+    width: 100%;
+    height: 100%;
+}
+
+.dropzone2x{
+    min-height: auto!important;
+    padding-bottom: 40px !important;
+}
+
+.text_fl{
+    display: flex;
+  
+}
+
+.restaurant_form2p{
+    width: 180px;
+    margin-right: 20px;
+}
+
+.restaurant_form2p input{
+    width: 100%;
+    height: 40px;
+    padding: 0px 15px;
+    color: rgb(153, 153, 153);
+    border: 1px solid rgb(216, 216, 216) !important;
+    border-radius: 4px;
+}
+
+.restaurant_form2p span{
+    font-size: 12px;
+    color: rgb(134, 134, 134);
+}
+
+.input_boxxp{
+    width: 48% !important;
+}
+.input_boxxp input{
+    width: 100% !important;
+}
+
+.boxv_add_input22{
+    justify-content: space-between;
+}
+
+.vpx_width{
+    width: 100% !important;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.pl_vl{
+    margin-right: 15px !important;
+    display: inline-block;
+}
+
+
+// card
+
+.box_catrd_xf{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 6px;
+}
+
+.box_catrd_xf h4{
+    font-size: 17px;
+    color: rgb(90, 90, 90);
+}
+
+.box_sub_card{
+    width: 100%;
+    height: auto;
+    background: rgb(245, 245, 245);
+    padding: 15px 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.box_sub_card h5 
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(90, 90, 90);
+    margin-bottom: 0px;
+}
+
+.box_sub_card span
+{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(90, 90, 90);
+}
+
+.box_sub_card button{
+    font-size: 12px;
+    padding: 1px 8px !important;
+}
+
+
+.box_sub_cardx .box_sub_inner{
+    margin: 20px 0px;
+}
+
+.btn_custom{
+    width: auto;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    margin-top: 10px;
+    background: rgb(221, 46, 33);
+}
+
+.box_sub_cardx h5
+{
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(90, 90, 90);
+    margin-bottom: 0px;
+}
+
+.box_sub_cardx span
+{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(134, 134, 134);
+}
+
+
+.btn_custom2{
+    
+    margin-top: 20px;
+    width: 100% !important;
+}
