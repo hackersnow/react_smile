@@ -5,6 +5,8 @@ import { Link } from "react-router-dom"
 import user2 from "../../assets/images/users/user-2.jpg"
 import "../../assets/scss/custom/pages/_dispacher.scss"
 
+import "../../assets/scss/custom/pages/_all_page_text_bg.scss"
+
 import {
   Row,
   Col,

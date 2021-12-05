@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState,useEffect } from "react"
 import MetaTags from "react-meta-tags"
 
 import {
@@ -58,6 +58,34 @@ const RestaurantAddition = () => {
     return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i]
   }
 
+
+  const [inputData, setInputData] = useState('');
+  const [items, setItems] = useState([]);
+
+  const addItem = () =>{
+    if(!inputData){
+
+    }else{
+      setItems([...items , inputData]);
+      setInputData('');
+    }
+  }
+
+  const deleteItems = (id) =>{
+    console.log(id);
+    const updateditem = items.filter((elem, inds)=>{
+      return inds !== id;
+    });
+    setItems(updateditem);
+  }
+
+
+  // useEffect(() => {
+  //  localStorage.setItem('lists', JSON.stringify(items));
+  // }, [items])
+
+
+
   return (
     <React.Fragment>
       <div className="page-content">
@@ -101,6 +129,33 @@ const RestaurantAddition = () => {
                           />
                         </div>
                       </div>
+
+                      <div className="restaurant_form">
+                        <label>Cuisine</label>
+                        <div className="input_resaurant_box input_resaurant_box">
+                          <input
+                            className="form-control"
+                            type="text"
+                            placeholder="Add Cuisine"
+                            value={inputData}
+                            onChange={(e)=> setInputData(e.target.value)}
+                          />
+                          <span class="plus_ser_add" onClick={addItem}><i className="fa fa-plus"></i></span>
+                        </div>
+                        <div className="add_items_vt">
+                          {
+                            items.map((elem , ind) =>{
+                              return(
+                               
+                                <span key={ind} > {elem} <i className="fas fa-times" onClick={ ()=> {deleteItems(ind)}}></i></span>
+                               
+                              )
+                            })
+                          }
+                          
+                        </div>
+                      </div>
+
                       <div className="restaurant_form">
                         <Label>Description </Label>
                         <Input
@@ -355,10 +410,10 @@ const RestaurantAddition = () => {
                       </div>
 
                       <div className="d-flex flex-wrap gap-2 input_box_sub mt-4">
-                        <Button type="submit" color="primary" className="">
+                        <Button type="submit"  className="btn_custom_from_add">
                           Create Restaurant
                         </Button>{" "}
-                        <Button type="reset" color="secondary" className="">
+                        <Button type="reset" className="btn_custom_from_yellow">
                           Cancel
                         </Button>
                       </div>

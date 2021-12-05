@@ -84,6 +84,33 @@ const ItemAddition = () => {
     setselectedGroup(selectedGroup)
   }
 
+  const [rows1, setrows1] = useState([])
+  const [rows2, setrows2] = useState([])
+
+  function handleAddRowNested() {
+    const item1 = { name1: "" }
+    setrows1([...rows1, item1])
+  }
+
+  function handleAddRowNested2() {
+    const item2 = { name1: "" }
+    setrows2([...rows2, item2])
+  }
+
+  const deletehandle = id => {
+    const updateditem = rows1.filter((elem, ind) => {
+      return ind !== id
+    })
+    setrows1(updateditem)
+  }
+
+  const deletehandle2 = id => {
+    const updateditem = rows2.filter((elem, ind) => {
+      return ind !== id
+    })
+    setrows2(updateditem)
+  }
+
   return (
     <React.Fragment>
       <div className="page-content">
@@ -93,10 +120,7 @@ const ItemAddition = () => {
           </title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs
-            title="Item Manager"
-            breadcrumbItem="Item Addition"
-          />
+          <Breadcrumbs title="Item Manager" breadcrumbItem="Item Addition" />
 
           <Row>
             <Col>
@@ -128,6 +152,7 @@ const ItemAddition = () => {
                       </div> */}
                       <div className="restaurant_form">
                         <Label>Item Description </Label>
+
                         <Input
                           type="textarea"
                           id="formmessage"
@@ -335,8 +360,6 @@ const ItemAddition = () => {
                           </div>
                         </Form>
                       </div>
-
-                     
                     </Col>
                     <Col md={6}>
                       <div className="restaurant_form">
@@ -358,19 +381,14 @@ const ItemAddition = () => {
                       </div>
 
                       <div className="restaurant_form">
-                        <label>Variant List</label>
-                        <div className="input_resaurant_box input_box_item_adit">
-                          <input
-                            className="form-control"
-                            type="text"
-                            placeholder="Item Name"
-                          />
-                          <input
-                            className="form-control"
-                            type="number"
-                            placeholder="Price of Variant"
-                            id="example-number-input"
-                          />
+                        <div className="ev_flex">
+                          <label>Variant List</label>
+                          <span
+                            class=" plus_ser_addxd"
+                            onClick={handleAddRowNested}
+                          >
+                            <i className="fa fa-plus"></i>
+                          </span>
                         </div>
 
                         <div className="input_resaurant_box input_box_item_adit">
@@ -386,20 +404,31 @@ const ItemAddition = () => {
                             id="example-number-input"
                           />
                         </div>
-
-                        <div className="input_resaurant_box input_box_item_adit">
-                          <input
-                            className="form-control"
-                            type="text"
-                            placeholder="Item Name"
-                          />
-                          <input
-                            className="form-control"
-                            type="number"
-                            placeholder="Price of Variant"
-                            id="example-number-input"
-                          />
-                        </div>
+                        {rows1.map((item1, idx) => (
+                          <div
+                            className="input_resaurant_box input_box_item_adit"
+                            id={"nested" + idx}
+                            key={idx}
+                          >
+                            <input
+                              className="form-control"
+                              type="text"
+                              placeholder="Item Name"
+                            />
+                            <input
+                              className="form-control"
+                              type="number"
+                              placeholder="Price of Variant"
+                              id="example-number-input"
+                            />
+                            <div className="btn_vx_vxd">
+                              <i
+                                className="fas fa-times"
+                                onClick={() => deletehandle(idx)}
+                              ></i>
+                            </div>
+                          </div>
+                        ))}
                       </div>
 
                       <div className="restaurant_form ">
@@ -418,7 +447,6 @@ const ItemAddition = () => {
                             <span class="vte_v">In gms</span>
                           </div>
 
-
                           <div className="che_boxd">
                             <div className="vd_chek vd_box_inP">
                               <Input
@@ -431,7 +459,6 @@ const ItemAddition = () => {
 
                             <span class="vte_v">In gms</span>
                           </div>
-
 
                           <div className="che_boxd">
                             <div className="vd_chek vd_box_inP">
@@ -446,7 +473,6 @@ const ItemAddition = () => {
                             <span class="vte_v">In gms</span>
                           </div>
 
-
                           <div className="che_boxd">
                             <div className="vd_chek vd_box_inP">
                               <Input
@@ -460,7 +486,6 @@ const ItemAddition = () => {
                             <span class="vte_v">In gms</span>
                           </div>
 
-
                           <div className="che_boxd">
                             <div className="vd_chek vd_box_inP">
                               <Input
@@ -473,9 +498,6 @@ const ItemAddition = () => {
 
                             <span class="vte_v">In gms</span>
                           </div>
-
-
-                          
                         </div>
                       </div>
 
@@ -491,7 +513,15 @@ const ItemAddition = () => {
                       </div>
 
                       <div className="restaurant_form">
-                        <label>Featured Products</label>
+                        <div className="ev_flex">
+                          <label>Featured Products</label>
+                          <span
+                            class=" plus_ser_addxd"
+                            onClick={handleAddRowNested2}
+                          >
+                            <i className="fa fa-plus"></i>
+                          </span>
+                        </div>
                         <div className="input_resaurant_box input_box_item_adit">
                           <input
                             className="form-control"
@@ -506,33 +536,33 @@ const ItemAddition = () => {
                           />
                         </div>
 
-                        <div className="input_resaurant_box input_box_item_adit">
-                          <input
-                            className="form-control"
-                            type="text"
-                            placeholder="Item Name"
-                          />
-                          <input
-                            className="form-control"
-                            type="number"
-                            placeholder="Price of Add-on"
-                            id="example-number-input"
-                          />
-                        </div>
+                        {rows2.map((item2, idx) => (
+                          <div
+                            className="input_resaurant_box input_box_item_adit"
+                            id={"nested" + idx}
+                            key={idx}
+                          >
+                            <input
+                              className="form-control"
+                              type="text"
+                              placeholder="Item Name"
+                            />
+                            <input
+                              className="form-control"
+                              type="number"
+                              placeholder="Price of Add-on"
+                              id="example-number-input"
+                            />
+                            <div className="btn_vx_vxd">
+                              <i
+                                className="fas fa-times"
+                                onClick={() => deletehandle2(idx)}
+                              ></i>
+                            </div>
+                          </div>
+                        ))}
 
-                        <div className="input_resaurant_box input_box_item_adit">
-                          <input
-                            className="form-control"
-                            type="text"
-                            placeholder="Item Name"
-                          />
-                          <input
-                            className="form-control"
-                            type="number"
-                            placeholder="Price of Add-on"
-                            id="example-number-input"
-                          />
-                        </div>
+                       
                       </div>
 
                       <div className="restaurant_form">
@@ -559,12 +589,11 @@ const ItemAddition = () => {
                         />
                       </div>
 
-
                       <div className="d-flex flex-wrap gap-2 input_box_sub mt-4">
-                        <Button type="submit" color="primary" className="">
-                        Create New Item
+                        <Button type="submit" className="btn_custom_from_add">
+                          Create New Item
                         </Button>{" "}
-                        <Button type="reset" color="secondary" className="">
+                        <Button type="reset" className="btn_custom_from_yellow">
                           Cancel
                         </Button>
                       </div>

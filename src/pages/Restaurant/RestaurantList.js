@@ -28,7 +28,7 @@ const RestaurantList = () => {
                     <CardTitle className="h4">Restaurant List </CardTitle>
                     <Button
                       color="success"
-                      className="btn btn-success waves-effect waves-light"
+                      className="btn_custom_from_x  "
                     >
                        <Link to="/RestaurantAddition"> Restaurant Addition</Link>
                     

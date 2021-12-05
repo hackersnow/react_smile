@@ -83,7 +83,7 @@ const DisputeManager = () => {
                             <h5>Person Name</h5>
                             <span>Order ID : 12345</span>
                           </div>
-                          <button className=" btn btn-warning">
+                          <button className="btn_custom_yellow btn_custom_All">
                             Order Details
                           </button>
                         </div>
@@ -93,7 +93,7 @@ const DisputeManager = () => {
                             <h5>Person Name</h5>
                             <span>Order ID : 12345</span>
                           </div>
-                          <button className=" btn btn-warning">
+                          <button className="btn_custom_yellow btn_custom_All">
                             Order Details
                           </button>
                         </div>
@@ -103,7 +103,7 @@ const DisputeManager = () => {
                             <h5>Person Name</h5>
                             <span>Order ID : 12345</span>
                           </div>
-                          <button className=" btn btn-warning">
+                          <button className="btn_custom_yellow btn_custom_All">
                             Order Details
                           </button>
                         </div>
@@ -113,7 +113,7 @@ const DisputeManager = () => {
                             <h5>Person Name</h5>
                             <span>Order ID : 12345</span>
                           </div>
-                          <button className=" btn btn-warning">
+                          <button className="btn_custom_yellow btn_custom_All">
                             Order Details
                           </button>
                         </div>
@@ -123,7 +123,7 @@ const DisputeManager = () => {
                             <h5>Person Name</h5>
                             <span>Order ID : 12345</span>
                           </div>
-                          <button className=" btn btn-warning">
+                          <button className="btn_custom_yellow btn_custom_All">
                             Order Details
                           </button>
                         </div>
@@ -159,7 +159,8 @@ const DisputeManager = () => {
                             <span>Customer Address</span>
                           </div>
 
-                          <button className="btn_custom btn_custom2">
+                
+                          <button className="btn_custom_from_x btn_custom2 mt-2">
                             Chat with Customer
                           </button>
                         </div>
@@ -183,7 +184,7 @@ const DisputeManager = () => {
                                 classNamePrefix="select2-selection "
                               />
                             </div>
-                            <button className="btn_custom">
+                            <button className="btn_custom_from_x mt-2">
                             Change Status
                             </button>
                           </div>
@@ -198,7 +199,7 @@ const DisputeManager = () => {
                                 placeholder="Add Meal Package Name"
                               />
                             </div>
-                            <button className="btn_custom">
+                            <button className="btn_custom_from_x mt-2">
                             Add Refund
                             </button>
                           </div>
@@ -216,7 +217,7 @@ const DisputeManager = () => {
                               />
                             </div>
 
-                            <button className="btn_custom">
+                            <button className="btn_custom_from_x mt-2">
                             Change Status
                             </button>
                           </div>

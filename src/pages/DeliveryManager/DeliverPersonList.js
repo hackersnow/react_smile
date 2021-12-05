@@ -27,8 +27,7 @@ const DeliverPersonList = () => {
                     <div className=" sub_btn_box">
                     <CardTitle className="h4">Delivery People List </CardTitle>
                     <Button
-                      color="success"
-                      className="btn btn-success waves-effect waves-light"
+                      className="btn_custom_from_x"
                     >
                       <Link to="/AddDeliveryPerson"> Add Delivery Person</Link>
                    

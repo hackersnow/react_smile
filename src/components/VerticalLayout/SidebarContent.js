@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react"
 
 // //Import Scrollbar
 import SimpleBar from "simplebar-react"
-
+import "../../assets/scss/custom/pages/_all_page_text_bg.scss"
 // MetisMenu
 import MetisMenu from "metismenujs"
 import { withRouter } from "react-router-dom"
@@ -96,8 +96,8 @@ const SidebarContent = props => {
             <li>
               <Link to="/dashboard" className="waves-effect">
                 <i className="fas fa-th-large"></i>
-                <span className="badge rounded-pill bg-primary float-end">2</span>
-                <span>Desboard</span>
+             
+                <span>Deshboard</span>
               </Link>
             </li>
 

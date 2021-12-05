@@ -28,8 +28,7 @@ const DietPlans = () => {
                     <div className=" sub_btn_box">
                     <CardTitle className="h4">Diet Plans</CardTitle>
                     <Button
-                      color="success"
-                      className="btn btn-success waves-effect waves-light"
+                     className="btn_custom_from_x"
                     >
                     <Link to="/AddDietPlans">  Add Diet Plans</Link>
                     </Button>{" "}

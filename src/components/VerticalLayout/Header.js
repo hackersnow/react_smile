@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { useState } from "react"
-
+import "../../assets/scss/custom/pages/_all_page_text_bg.scss"
 import { connect } from "react-redux"
 import { Form, Dropdown, DropdownMenu, DropdownItem, DropdownToggle, Input, Button } from "reactstrap"
 
@@ -77,19 +77,23 @@ const Header = props => {
             <div className="navbar-brand-box">
               <Link to="/" className="logo logo-dark">
                 <span className="logo-sm">
-                  <img src={logosmImg} alt="" height="22" />
+                  {/* <img src={logosmImg} alt="" height="22" /> */}
+                  {/* <h4 className="log_demo">Thaamboolam</h4> */}
                 </span>
                 <span className="logo-lg">
-                  <img src={logodarkImg} alt="" height="17" />
+                  {/* <img src={logodarkImg} alt="" height="17" /> */}
+                  {/* <h4 className="log_demo">Thaamboolam</h4> */}
                 </span>
               </Link>
 
               <Link to="/" className="logo logo-light">
                 <span className="logo-sm">
-                  <img src={logosmImg} alt="" height="22" />
+                  {/* <img src={logosmImg} alt="" height="22" /> */}
+                  {/* <h4 className="log_demo">Thaamboolam</h4> */}
                 </span>
                 <span className="logo-lg">
-                  <img src={logolightImg} alt="" height="18" />
+                  {/* <img src={logolightImg} alt="" height="18" /> */}
+                  <h4 className="log_demo">Thaamboolam</h4>
                 </span>
               </Link>
             </div>

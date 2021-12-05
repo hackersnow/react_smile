@@ -159,6 +159,44 @@ const Add_Subscripton = () => {
     setselectedGroup(selectedGroup)
   }
 
+
+// Add list 1
+  const [sub_add, sub_addfun] = useState([])
+ 
+ 
+  function cred_sub() {
+    const item1 = { name1: "" }
+    sub_addfun([...sub_add, item1])
+  }
+
+  
+
+  const deleteSub =(ids)=> {
+    const updateditem = sub_add.filter((elem, ind) => {
+      return ind !== ids
+    })
+    sub_addfun(updateditem)
+  }
+
+
+  // Add list 2
+  const [sub_add2, sub_addfun2] = useState([])
+ 
+ 
+  function cred_sub2() {
+    const item1 = { name1: "" }
+    sub_addfun2([...sub_add2, item1])
+  }
+
+  
+
+  const deleteSub2 =(ids)=> {
+    const updateditem = sub_add2.filter((elem, ind) => {
+      return ind !== ids
+    })
+    sub_addfun2(updateditem)
+  }
+
   
 
   return (
@@ -198,6 +236,7 @@ const Add_Subscripton = () => {
                             name="placement"
                             id="placement"
                             placeholder="Add Meal Package Name"
+                           
                           />
                         </div>
 
@@ -216,7 +255,16 @@ const Add_Subscripton = () => {
                         </div>
 
                         <div className="input_box_sub">
+                       
+                         <div className="ev_flex">
                          <label>Total No. of Orders Per Day</label>
+                          <span
+                            class=" plus_ser_addxd"
+                            onClick={cred_sub2}
+                          >
+                            <i className="fa fa-plus"></i>
+                          </span>
+                        </div>
                           <Input
                             type="text"
                             onChange={e => {
@@ -227,6 +275,34 @@ const Add_Subscripton = () => {
                             className="vc_input"
                             placeholder="Breakfast/Lunch/Dinner"
                           />
+                           {sub_add2.map((item2, idx) => (
+                        
+
+                        <div className="boxv_add_input input_resaurant_box mb-3  mt-3" id={"nested" + idx}
+                            key={idx}>
+                          <Input
+                            type="text"
+                            onChange={e => {
+                              placementchange(e)
+                            }}
+                            name="placement"
+                            id="placement"
+                            className="vc_input"
+                            placeholder="Breakfast/Lunch/Dinner"
+                          />
+                          <div className="btn_vx_vxd">
+                              <i
+                                className="fas fa-times"
+                                onClick={() => deleteSub2(idx)}
+                              ></i>
+                          </div>
+                        </div>
+                          
+                            
+                         
+                        ))}
+
+
                         </div>
 
                         <div className="input_box_sub input_box_subxp">
@@ -242,8 +318,18 @@ const Add_Subscripton = () => {
                         </div>
 
                         <div className="input_box_sub">
+                        <div className="ev_flex">
                         <label>Meal Package Subscription Variants</label>
-                          <div className="boxv_add_input">
+                          <span
+                            class=" plus_ser_addxd"
+                            onClick={cred_sub}
+                          >
+                            <i className="fa fa-plus"></i>
+                          </span>
+                        </div>
+
+
+                          <div className="boxv_add_input mb-3">
                           <Input
                             type="text"
                             onChange={e => {
@@ -265,16 +351,55 @@ const Add_Subscripton = () => {
                             placeholder="Price"
                           />
                           </div>
+
+
+                          {sub_add.map((item2, idx) => (
+                        
+
+                        <div className="boxv_add_input input_resaurant_box mb-3" id={"nested" + idx}
+                            key={idx}>
+                           <Input
+                            type="text"
+                          
+                            name="placement"
+                            id="placement"
+                            className="vc_input"
+                            placeholder="Duration in Days"
+                          />
+                          <Input
+                            type="text"
+                           
+                            name="placement"
+                            id="placement"
+                            className="vc_input"
+                            placeholder="Price"
+                          />
+
+                          <div className="btn_vx_vxd">
+                              <i
+                                className="fas fa-times"
+                                onClick={() => deleteSub(idx)}
+                              ></i>
+                          </div>
+                        </div>
+                          
+                            
+                         
+                        ))}
+
+
+
+
                         </div>
                         <div className="d-flex flex-wrap gap-2 input_box_sub mt-4">
                       <Button
                         type="submit"
-                        color="primary"
-                        className=""
+                       
+                        className="btn_custom_from_add"
                       >
                        Add Subscription
                           </Button>{" "}
-                      <Button type="reset" color="secondary" className="">
+                      <Button type="reset"  className="btn_custom_from_yellow">
                         Cancel
                           </Button>
                     </div>

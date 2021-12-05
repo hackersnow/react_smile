@@ -28,8 +28,7 @@ const UserProfileList = () => {
                     <div className=" sub_btn_box">
                     <CardTitle className="h4">User Profile List</CardTitle>
                     <Button
-                      color="success"
-                      className="btn btn-success waves-effect waves-light"
+                    className="btn_custom_from_x"
                     >
 
 <Link to="/AddUserProfile"> Add User Profile</Link>

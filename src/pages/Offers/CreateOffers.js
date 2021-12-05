@@ -71,6 +71,26 @@ const AddDeliveryPerson = () => {
    * Formats the size
    */
   
+// add_list 1
+   const [offer_input, setofferinp] = useState([])
+ 
+ 
+   function cred_offerin() {
+     const item1 = { name1: "" }
+     setofferinp([...offer_input, item1])
+   }
+ 
+   
+ 
+   const deleteoffer_in = (id )=> {
+     const updateditem = offer_input.filter((elem, ind) => {
+       return ind !== id
+     })
+     setofferinp(updateditem)
+   }
+
+
+   
 
   const [selectedGroup, setselectedGroup] = useState(null)
 
@@ -206,21 +226,54 @@ const AddDeliveryPerson = () => {
 
 
                       <div className="restaurant_form mt-3">
+                       
+                        <div className="ev_flex">
                         <label>Offer Valid for All Orders </label>
-                        <div className="input_resaurant_box">
+                          <span
+                            class=" plus_ser_addxd"
+                            onClick={cred_offerin}
+                          >
+                            <i className="fa fa-plus"></i>
+                          </span>
+                        </div>
+
+                        <div className="input_resaurant_box mb-2">
                           <input
                             className="form-control"
                             type="text"
                             placeholder="Mutton Biryani"
                           />
                         </div>
+
+                        {offer_input.map((item2, idx) => (
+                        
+
+                        <div className="input_resaurant_box mb-2"  id={"nested" + idx}
+                            key={idx}>
+                          <input
+                            className="form-control"
+                            type="text"
+                            placeholder="Mutton Biryani"
+                          />
+                          <div className="btn_vx_vxd">
+                              <i
+                                className="fas fa-times"
+                                onClick={() => deleteoffer_in(idx)}
+                              ></i>
+                            </div>
+                        </div>
+                          
+                            
+                         
+                        ))}
+
                       </div>
 
                       <div className="d-flex flex-wrap gap-2 input_box_sub mt-4">
-                        <Button type="submit" color="primary" className="">
+                        <Button type="submit"  className="btn_custom_from_add">
                         Create Offer
                         </Button>{" "}
-                        <Button type="reset" color="secondary" className="">
+                        <Button type="reset" className="btn_custom_from_yellow">
                           Cancel
                         </Button>
                       </div>

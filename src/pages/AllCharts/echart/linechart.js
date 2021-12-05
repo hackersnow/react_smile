@@ -25,7 +25,7 @@ class Line extends Component {
             },
             xAxis: {
                 type: 'category',
-                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                data: ['Jan', 'Fab', 'Mar', 'Apr', 'May', 'Jun', 'Jul','Agu','Sep','Oct','Nov','Dec'],
                 axisLine: {
                     lineStyle: {
                         color: "#74788d"
@@ -34,6 +34,7 @@ class Line extends Component {
             },
             yAxis: {
                 type: 'value',
+                data: ['0', '5', '7','1320 '],
                 axisLine: {
                     lineStyle: {
                         color: "#74788d"
@@ -41,16 +42,16 @@ class Line extends Component {
                 }
             },
             series: [{
-                data: [820, 932, 901, 934, 1290, 1330, 1320],
+                data: [820, 932, 901, 934, 1290, 1330, 1200, 800 , 1420,1320,1320 ,378 ],
                 type: 'line'
             }],
-            color: ['#3c4ccf'],
+            color: ['#00AFF0'],
         };
     };
     render() {
         return (
             <React.Fragment>
-                <ReactEcharts style={{ height: "350px" }} option={this.getOption()} />
+                <ReactEcharts style={{ height: "450px" }} option={this.getOption()} />
             </React.Fragment>
         );
     }

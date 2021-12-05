@@ -28,7 +28,7 @@ const CuisineList = () => {
                     <CardTitle className="h4">Cuisines List Manager</CardTitle>
                     <Button
                       color="success"
-                      className="btn btn-success waves-effect waves-light"
+                      className="btn_custom_from_x"
                     >
                        <Link to="/CuisineAddition">Add Cuisine</Link>
                    

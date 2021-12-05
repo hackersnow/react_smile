@@ -1,0 +1,125 @@
+
+$set1-gradient-bg-color:#FE60AE;
+$set12-gradient-bg-color: #E36CD9 ;
+
+
+$set2-gradient-bg-color: #F48665;
+$set21-gradient-bg-color: #FDA23F;
+
+$set3-gradient-bg-color: #23BDB8;
+$set31-gradient-bg-color: #43E794;
+
+$set4-gradient-bg-color: #9A56FF;
+$set41-gradient-bg-color: #D78AFD;
+
+
+$blue-bg-color: #00AFF0;
+$green-bg-color: #63F463;
+$yellow-bg-color: #FDAE3B;
+
+
+
+
+.custom_coro{
+    background: linear-gradient(-45deg, $set1-gradient-bg-color, $set12-gradient-bg-color);
+    color: #fff;
+}
+
+.custom_coro1{
+    background: linear-gradient(-45deg, $set21-gradient-bg-color, $set2-gradient-bg-color);
+    color: #fff;
+}   
+
+.custom_coro2{
+    background: linear-gradient(-45deg, $set31-gradient-bg-color, $set3-gradient-bg-color);
+    color: #fff;
+} 
+
+.custom_coro3{
+    background: linear-gradient(-45deg, $set41-gradient-bg-color, $set4-gradient-bg-color);
+    color: #fff;
+} 
+
+.vc_dv h5{
+    font-weight: 300;
+}
+
+
+.steps2 ul li .current{
+    background: linear-gradient(-45deg, $set31-gradient-bg-color, $set3-gradient-bg-color) !important;
+    color: #ffffff !important;
+    border: 1px solid $set31-gradient-bg-color !important;
+
+}
+
+.steps2 ul li .active{
+    background: linear-gradient(-45deg, $set31-gradient-bg-color, $set3-gradient-bg-color)!important;
+    color: #ffffff !important;
+    border: 1px solid $set31-gradient-bg-color !important;
+}
+
+.log_demo{
+    font-size: 20px;
+    color: #222!important;
+    line-height: 68px;
+    margin: 0px !important;
+}
+
+
+.btn_custom_All{
+    padding: 2px 15px;
+    color: #fff !important;
+    border-radius: 50px;
+    display: inline-block;
+    border: none !important;
+    font-size: 13px;
+}
+
+.btn_custom_blue{
+    background: $blue-bg-color;
+}
+
+.btn_custom_green{
+    background: $green-bg-color;
+}
+
+
+.btn_custom_yellow{
+    background: $yellow-bg-color;
+}
+
+.custom_image_sm{
+    width: 70px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.custom_image_sm img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.btn_custom_from_x , .btn_custom_from_add ,.btn_custom_from_yellow{
+    padding: 7px 30px !important;
+    color: #fff;
+    border-radius: 50px !important;
+    display: inline-block;
+    border: none !important;
+    font-size: 14px;
+    background: linear-gradient(-45deg, $set31-gradient-bg-color, $set3-gradient-bg-color) !important;
+    color: #ffffff !important;
+    transition: All 0.5s;
+}
+
+.btn_custom_from_x:hover ,.btn_custom_from_add:hover{
+    background: linear-gradient(-45deg, $set3-gradient-bg-color, $set31-gradient-bg-color) !important;
+}
+
+
+.btn_custom_from_yellow{
+    background: $yellow-bg-color !important;
+}

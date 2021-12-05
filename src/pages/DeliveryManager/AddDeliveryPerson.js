@@ -402,10 +402,10 @@ const AddDeliveryPerson = () => {
          
 
                       <div className="d-flex flex-wrap gap-2 input_box_sub mt-4">
-                        <Button type="submit" color="primary" className="">
+                        <Button type="submit" className="btn_custom_from_add">
                           Create Restaurant
                         </Button>{" "}
-                        <Button type="reset" color="secondary" className="">
+                        <Button type="reset" className="btn_custom_from_yellow">
                           Cancel
                         </Button>
                       </div>

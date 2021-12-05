@@ -6,6 +6,7 @@ import {
   Row,
   Col,
   Button,
+  CardTitle,
   Card,
   CardBody,
   Input,
@@ -21,7 +22,8 @@ import { Link } from "react-router-dom";
 
 // Custom Scrollbar
 import SimpleBar from "simplebar-react";
-
+import Line from "../AllCharts/echart/linechart"
+import "../../assets/scss/custom/pages/_all_page_text_bg.scss"
 // import images
 
 import servicesIcon1 from "../../assets/images/services-icon/01.png";
@@ -92,19 +94,21 @@ const Dashboard = props => {
           </div>
           <Row>
             <Col xl={3} md={6}>
-              <Card className="mini-stat bg-primary text-white">
+              <Card className="mini-stat  custom_coro">
                 <CardBody>
-                  <div className="vc">
+                  <div className="vc vc_dv">
                     <div className="float-start mini-stat-img me-4">
-                      <img src={servicesIcon1} alt="" />
+                      {/* <img src={servicesIcon1} alt="" /> */}
+                      <i className="fas fa-home font-size-24 text-white"></i>
                     </div>
-                    <h5 className="font-size-12 text-uppercase mt-0 text-white-50">
+                   
+                    <h4 className="fw-medium font-size-24 text-white">
+                      1,685{" "}
+                     
+                    </h4>
+                    <h5 className="font-size-13  text-white">
                     Orders Received
                     </h5>
-                    <h4 className="fw-medium font-size-24">
-                      1,685{" "}
-                      <i className="mdi mdi-arrow-up text-success ms-2"></i>
-                    </h4>
                     
                   </div>
                   
@@ -112,19 +116,21 @@ const Dashboard = props => {
               </Card>
             </Col>
             <Col xl={3} md={6}>
-              <Card className="mini-stat bg-primary text-white">
+              <Card className="mini-stat custom_coro1">
                 <CardBody>
-                  <div className="vc">
+                  <div className="vc vc_dv">
                     <div className="float-start mini-stat-img me-4">
-                      <img src={servicesIcon2} alt="" />
+                      {/* <img src={servicesIcon2} alt="" /> */}
+                      <i className="fas fa-truck font-size-24 text-white"></i>
                     </div>
-                    <h5 className="font-size-12 text-uppercase mt-0 text-white-50">
+                   
+                    <h4 className="fw-medium font-size-24 text-white">
+                      52,368{" "}
+                      
+                    </h4>
+                    <h5 className="font-size-13  mt-0 text-white">
                     Orders Delivered
                     </h5>
-                    <h4 className="fw-medium font-size-24">
-                      52,368{" "}
-                      <i className="mdi mdi-arrow-down text-danger ms-2"></i>
-                    </h4>
                   
                   </div>
                   
@@ -132,19 +138,21 @@ const Dashboard = props => {
               </Card>
             </Col>
             <Col xl={3} md={6}>
-              <Card className="mini-stat bg-primary text-white">
+              <Card className="mini-stat custom_coro2">
                 <CardBody>
-                  <div className="vc">
+                  <div className="vc vc_dv">
                     <div className="float-start mini-stat-img me-4">
-                      <img src={servicesIcon3} alt="" />
+                      {/* <img src={servicesIcon3} alt="" /> */}
+                      <i className="fas fa-hand-holding-usd font-size-24 text-white"></i>
                     </div>
-                    <h5 className="font-size-12 text-uppercase mt-0 text-white-50">
+                    
+                    <h4 className="fw-medium font-size-24 text-white">
+                    <i className="fas fa-rupee-sign"></i> 15.8{" "}
+                    
+                    </h4>
+                    <h5 className="font-size-13  text-white">
                     Todays Earnings
                     </h5>
-                    <h4 className="fw-medium font-size-24">
-                      15.8{" "}
-                      <i className="mdi mdi-arrow-up text-success ms-2"></i>
-                    </h4>
                   
                   </div>
                   
@@ -152,19 +160,21 @@ const Dashboard = props => {
               </Card>
             </Col>
             <Col xl={3} md={6}>
-              <Card className="mini-stat bg-primary text-white">
+              <Card className="mini-stat custom_coro3">
                 <CardBody>
-                  <div className="vc">
+                  <div className="vc vc_dv">
                     <div className="float-start mini-stat-img me-4">
-                      <img src={servicesIcon4} alt="" />
+                      {/* <img src={servicesIcon4} alt="" /> */}
+                      <i className="fas fa-wallet font-size-24 text-white"></i>
                     </div>
-                    <h5 className="font-size-12 text-uppercase mt-0 text-white-50">
+                   
+                    <h4 className="fw-medium font-size-24 text-white">
+                    <i className="fas fa-rupee-sign"></i>2436{" "}
+                    
+                    </h4>
+                    <h5 className="font-size-12 text-white">
                     Monthly Earnings  
                     </h5>
-                    <h4 className="fw-medium font-size-24">
-                      2436{" "}
-                      <i className="mdi mdi-arrow-up text-success ms-2"></i>
-                    </h4>
                    
                   </div>
                   
@@ -175,42 +185,30 @@ const Dashboard = props => {
 
          <Row>
             <Col xl={12}>
-              <Card>
+            <Card>
                 <CardBody>
-                  <h4 className="card-title mb-4">Monthly Earning</h4>
-                  <Row>
-                    <Col lg={7}>
-                      <div>
-                        <LineAreaChart />
+                  <CardTitle className="h4 mb-4">Line chart with area</CardTitle>
+                  <Row className="justify-content-center">
+                    <Col sm={4}>
+                      <div className="text-center">
+                        <h5 className="mb-0 font-size-20">4234</h5>
+                        <p className="text-muted">Activated</p>
                       </div>
                     </Col>
-                    <Col lg={5}>
-                      <Row>
-                        <Col md={6}>
-                          <div className="text-center">
-                            <p className="text-muted mb-4">This month</p>
-                            <h3>$34,252</h3>
-                            <p className="text-muted mb-5">
-                              It will be as simple as in fact it will be
-                              occidental.
-                            </p>
-                            <RadialChart />
-                          </div>
-                        </Col>
-                        <Col md={6}>
-                          <div className="text-center">
-                            <p className="text-muted mb-4">Last month</p>
-                            <h3>$36,253</h3>
-                            <p className="text-muted mb-5">
-                              It will be as simple as in fact it will be
-                              occidental.
-                            </p>
-                            <Apexdonut />
-                          </div>
-                        </Col>
-                      </Row>
+                    <Col sm={4}>
+                      <div className="text-center">
+                        <h5 className="mb-0 font-size-20">64521</h5>
+                        <p className="text-muted">Pending</p>
+                      </div>
+                    </Col>
+                    <Col sm={4}>
+                      <div className="text-center">
+                        <h5 className="mb-0 font-size-20">94521</h5>
+                        <p className="text-muted">Deactivated</p>
+                      </div>
                     </Col>
                   </Row>
+                  <Line />
                 </CardBody>
               </Card>
             </Col>
@@ -486,11 +484,13 @@ const Dashboard = props => {
                       
                           <td>
                             <div className="d-flex">
-                              <img
-                                src={user2}
-                                alt=""
-                                className="avatar-xs avatar-xs_custom me-2"
-                              />{" "}
+                              <div className="custom_image_sm">
+                                <img
+                                  src={user2}
+                                  alt=""
+                                
+                                />{" "}
+                              </div>
                               <div className="bot_v_oder_re">
                                 <h4>#12345 - Food Item One to Mr. Customer Name</h4>
                                 <span>Order Placed - 18: 34, 19 Jun 2020, Address with Door Number</span>
@@ -499,13 +499,13 @@ const Dashboard = props => {
                           </td>
                           
                           <td>
-                            <span className="btn btn-primary btn-sm">
+                          <span className="btn_custom_blue btn_custom_All">
                             Accept Order
                             </span>
                           </td>
 
                           <td>
-                            <span className="btn btn-success btn-sm">
+                          <span className="btn_custom_green btn_custom_All">
                             New Order
                             </span>
                           </td>
@@ -518,11 +518,13 @@ const Dashboard = props => {
                       
                           <td>
                             <div className="d-flex">
-                              <img
-                                src={user2}
-                                alt=""
-                                className="avatar-xs avatar-xs_custom me-2"
-                              />{" "}
+                            <div className="custom_image_sm">
+                                <img
+                                  src={user2}
+                                  alt=""
+                                
+                                />{" "}
+                              </div>
                               <div className="bot_v_oder_re">
                                 <h4>#12345 - Food Item One to Mr. Customer Name</h4>
                                 <span>Order Placed - 18: 34, 19 Jun 2020, Address with Door Number</span>
@@ -536,7 +538,7 @@ const Dashboard = props => {
                             </span>
                           </td>
                           <td>
-                            <span className="btn btn-primary btn-sm">
+                          <span className="btn_custom_blue btn_custom_All">
                             Processed
                             </span>
                           </td>
@@ -549,11 +551,13 @@ const Dashboard = props => {
                       
                           <td>
                             <div className="d-flex">
-                              <img
-                                src={user2}
-                                alt=""
-                                className="avatar-xs avatar-xs_custom me-2"
-                              />{" "}
+                            <div className="custom_image_sm">
+                                <img
+                                  src={user2}
+                                  alt=""
+                                
+                                />{" "}
+                              </div>
                               <div className="bot_v_oder_re">
                                 <h4>#12345 - Food Item One to Mr. Customer Name</h4>
                                 <span>Order Placed - 18: 34, 19 Jun 2020, Address with Door Number</span>
@@ -567,7 +571,7 @@ const Dashboard = props => {
                             </span>
                           </td>
                           <td>
-                            <span className="btn btn-warning btn-sm">
+                          <span className="btn_custom_yellow btn_custom_All">
                             Delivered
                             </span>
                           </td>
@@ -578,11 +582,13 @@ const Dashboard = props => {
                       
                       <td>
                         <div className="d-flex">
-                          <img
-                            src={user2}
-                            alt=""
-                            className="avatar-xs avatar-xs_custom me-2"
-                          />{" "}
+                        <div className="custom_image_sm">
+                                <img
+                                  src={user2}
+                                  alt=""
+                                
+                                />{" "}
+                              </div>
                           <div className="bot_v_oder_re">
                             <h4>#12345 - Food Item One to Mr. Customer Name</h4>
                             <span>Order Placed - 18: 34, 19 Jun 2020, Address with Door Number</span>
@@ -597,7 +603,7 @@ const Dashboard = props => {
                       </td>
 
                       <td>
-                            <span className="btn btn-primary btn-sm">
+                      <span className="btn_custom_blue btn_custom_All">
                             Processed
                             </span>
                           </td>
@@ -653,7 +659,7 @@ const Dashboard = props => {
                           <td>123, Road, Building, Village, City</td>
                           <td>10:25 - 18/04/2020</td>
                           <td>
-                            <span className="  btn-success btn-sm">paid</span>
+                            <span className="btn_custom_green btn_custom_All">paid</span>
                           </td>
                           <td>
                           Subscription
@@ -672,7 +678,7 @@ const Dashboard = props => {
                           <td>123, Road, Building, Village, City</td>
                           <td>10:25 - 18/04/2020</td>
                           <td>
-                            <span className="  btn-warning btn-sm">Order Cancelled</span>
+                          <span className="btn_custom_yellow btn_custom_All">Order Cancelled</span>
                           </td>
                           <td>
                           Regular Order
@@ -691,7 +697,7 @@ const Dashboard = props => {
                           <td>123, Road, Building, Village, City</td>
                           <td>10:25 - 18/04/2020</td>
                           <td>
-                            <span className="  btn-danger btn-sm">Payment Failed</span>
+                          <span className="btn_custom_blue btn_custom_All">Payment Failed</span>
                           </td>
                           <td>
                           Regular Order
@@ -711,7 +717,7 @@ const Dashboard = props => {
                           <td>123, Road, Building, Village, City</td>
                           <td>10:25 - 18/04/2020</td>
                           <td>
-                            <span className="  btn-success btn-sm">paid</span>
+                          <span className="btn_custom_green btn_custom_All">paid</span>
                           </td>
                           <td>
                           Regular Order

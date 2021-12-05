@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import MetaTags from "react-meta-tags"
 import user2 from "../../assets/images/users/user-2.jpg"
 import "../../assets/scss/custom/pages/_dispacher.scss"
+import "../../assets/scss/custom/pages/_all_page_text_bg.scss"
 import {
   Card,
   CardBody,
@@ -94,8 +95,7 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span
-                                            className="  btn-warning btn-sm"
+                                        <span className="btn_custom_yellow btn_custom_All"
                                             onClick={() => {
                                               setmodal_large(true)
                                             }}
@@ -120,7 +120,7 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm"  onClick={() => {
+                                            <span className="btn_custom_yellow btn_custom_All"  onClick={() => {
                                               setmodal_large(true)
                                             }}>
                                             Order Details
@@ -143,7 +143,7 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm"  onClick={() => {
+                                            <span className="btn_custom_yellow btn_custom_All"  onClick={() => {
                                               setmodal_large(true)
                                             }}>
                                             Order Details
@@ -166,7 +166,7 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm"  onClick={() => {
+                                            <span className="btn_custom_yellow btn_custom_All"  onClick={() => {
                                               setmodal_large(true)
                                             }}>
                                             Order Details
@@ -189,7 +189,7 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm"  onClick={() => {
+                                            <span className="btn_custom_yellow btn_custom_All"  onClick={() => {
                                               setmodal_large(true)
                                             }}>
                                             Order Details

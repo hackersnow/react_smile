@@ -178,25 +178,24 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span
-                                            className="  btn-warning btn-sm"
+                                          <span className="btn_custom_yellow btn_custom_All"
                                             onClick={() => {
                                               setmodal_large(true)
                                             }}
                                           >
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                             <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Assign Order
                                       </span>
-                                      <span className="btn-warning btn-sm">
+                                     <span className="btn_custom_yellow btn_custom_All">
                                         Request for Change
                                       </span>
                                     </div>
@@ -213,22 +212,22 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm"  onClick={() => {
+                                           <span className="btn_custom_yellow btn_custom_All" onClick={() => {
                                               setmodal_large(true)
                                             }}>
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Assign Order
                                       </span>
-                                      <span className="btn-warning btn-sm">
+                                     <span className="btn_custom_yellow btn_custom_All">
                                         Request for Change
                                       </span>
                                     </div>
@@ -245,22 +244,22 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm"  onClick={() => {
+                                           <span className="btn_custom_yellow btn_custom_All" onClick={() => {
                                               setmodal_large(true)
                                             }}>
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Assign Order
                                       </span>
-                                      <span className="btn-warning btn-sm">
+                                     <span className="btn_custom_yellow btn_custom_All">
                                         Request for Change
                                       </span>
                                     </div>
@@ -277,22 +276,22 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm"  onClick={() => {
+                                           <span className="btn_custom_yellow btn_custom_All" onClick={() => {
                                               setmodal_large(true)
                                             }}>
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Assign Order
                                       </span>
-                                      <span className="btn-warning btn-sm">
+                                     <span className="btn_custom_yellow btn_custom_All">
                                         Request for Change
                                       </span>
                                     </div>
@@ -309,22 +308,22 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm"  onClick={() => {
+                                           <span className="btn_custom_yellow btn_custom_All" onClick={() => {
                                               setmodal_large(true)
                                             }}>
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Assign Order
                                       </span>
-                                      <span className="btn-warning btn-sm">
+                                     <span className="btn_custom_yellow btn_custom_All">
                                         Request for Change
                                       </span>
                                     </div>
@@ -393,20 +392,20 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Dispute
                                       </span>
-                                      <span className="btn-warning btn-sm">
+                                     <span className="btn_custom_yellow btn_custom_All">
                                         Delivery Guy Picked Up
                                       </span>
                                     </div>
@@ -423,20 +422,20 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Dispute
                                       </span>
-                                      <span className="btn-warning btn-sm">
+                                     <span className="btn_custom_yellow btn_custom_All">
                                         Delivery Guy Picked Up
                                       </span>
                                     </div>
@@ -453,20 +452,20 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Dispute
                                       </span>
-                                      <span className="btn-warning btn-sm">
+                                     <span className="btn_custom_yellow btn_custom_All">
                                         Delivery Guy Picked Up
                                       </span>
                                     </div>
@@ -483,20 +482,20 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Dispute
                                       </span>
-                                      <span className="btn-warning btn-sm">
+                                     <span className="btn_custom_yellow btn_custom_All">
                                         Delivery Guy Picked Up
                                       </span>
                                     </div>
@@ -513,20 +512,20 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Dispute
                                       </span>
-                                      <span className="btn-warning btn-sm">
+                                     <span className="btn_custom_yellow btn_custom_All">
                                         Delivery Guy Picked Up
                                       </span>
                                     </div>
@@ -597,17 +596,17 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Transit
                                       </span>
                                     </div>
@@ -624,17 +623,17 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Transit
                                       </span>
                                     </div>
@@ -651,17 +650,17 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Transit
                                       </span>
                                     </div>
@@ -678,17 +677,17 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Transit
                                       </span>
                                     </div>
@@ -705,17 +704,17 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                     <div className="btn_contt_order btn_contt_order3">
-                                      <span className="btn-success btn-sm">
+                                         <span className="btn_custom_green btn_custom_All">
                                         Transit
                                       </span>
                                     </div>
@@ -784,10 +783,10 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
@@ -806,10 +805,10 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
@@ -828,10 +827,10 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
@@ -850,10 +849,10 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>
@@ -872,10 +871,10 @@ const Dispacher_oder = () => {
                                         <a href="#">+91 98765 543211</a>
 
                                         <div className="btn_contt_order btn_contt_order2">
-                                          <span className="  btn-warning btn-sm">
+                                           <span className="btn_custom_yellow btn_custom_All">
                                             Order Details
                                           </span>
-                                          <span className="  btn-success btn-sm">
+                                            <span className="btn_custom_blue btn_custom_All">
                                             Message
                                           </span>
                                         </div>

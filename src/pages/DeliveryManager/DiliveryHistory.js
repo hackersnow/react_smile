@@ -74,8 +74,7 @@ const DiliveryHistory = () => {
                   <div className=" sub_btn_box">
                     <CardTitle className="h4">Shift Details </CardTitle>
                     <Button
-                      color="success"
-                      className="btn btn-success waves-effect waves-light"
+                      className="btn_custom_from_x"
                     >
                      <Link to="/AddDeliveryPerson"> Add Delivery Person</Link>
                     </Button>{" "}
